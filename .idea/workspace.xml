@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f01645a-e057-4c79-9fa2-209f3b2ebf6b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blind75/Easy/BestTimeToBuyAndSellStock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blind75/Easy/Classes/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blind75/Easy/Classes/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blind75/Easy/ClimbingStairs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blind75/Easy/ContainsDuplicate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blind75/Easy/InvertTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blind75/Easy/IsSameTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blind75/Easy/LinkedListCycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blind75/Easy/MeetingRooms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blind75/Easy/MergeTwoSortedLists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blind75/Easy/ReverseLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blind75/Easy/SubtreeOfAnotherTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blind75/Easy/ValidAnagram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blind75/Easy/ValidPalindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blind75/Easy/ValidParanthesis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blind75/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blind75/Easy/TwoSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682530072098</updated>
-      <workItem from="1682530073539" duration="1050000" />
+      <workItem from="1682530073539" duration="7695000" />
     </task>
     <servers />
   </component>
