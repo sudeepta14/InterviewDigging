@@ -16,6 +16,11 @@ import Blind75.Easy.Classes.TreeNode;
  *         this.right = right;
  *     }
  * }
+ *
+ * Time complexity is O(N*M) where N = number of nodes in the tree and M is no of nodes in subtree
+ * Space Complexity is O(N+M) where N= number of nodes in the tree (before calling isSame, our call stack has atmost N elements
+ * and might increase to O(N+M) elements during the call. After the call, it will be back to O(N) elements. 
+ * Atmost of N recursive calls to the DFS each of these calls will have M recursive calls to isSame.
  */
 class SubtreeOfAnotherTree {
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {
