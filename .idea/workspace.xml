@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f01645a-e057-4c79-9fa2-209f3b2ebf6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Blind75/Medium/CoinChange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blind75/Medium/LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blind75/Medium/RotateImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blind75/Hard/ReverseNodesKGroup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1682530072098</updated>
       <workItem from="1682530073539" duration="8154000" />
-      <workItem from="1682541796955" duration="3987000" />
+      <workItem from="1682541796955" duration="4565000" />
     </task>
     <servers />
   </component>
