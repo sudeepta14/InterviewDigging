@@ -1,0 +1,25 @@
+class Logger {
+    Map<String, Integer> map;
+    public Logger() {
+        map = new HashMap<String, Integer>();
+    }
+    
+    public boolean shouldPrintMessage(int timestamp, String message) {
+        if(map.containsKey(message) && timestamp - map.get(message) < 10){
+            return false;
+        }
+        map.put(message, timestamp);
+        return true;
+    }
+}
+
+/**
+ * Your Logger object will be instantiated and called as such:
+ * Logger obj = new Logger();
+ * boolean param_1 = obj.shouldPrintMessage(timestamp,message);
+ */
+
+ /*
+ Time complexity : O(1) as get of hashmap is constant time complexity
+ Space complexity : O(N) as hashmap size is of number of unique messages
+ */
