@@ -1,0 +1,37 @@
+class Solution {
+    private int result;
+    public int maxLength(List<String> arr) {
+        if(arr == null || arr.size() == 0) return 0;
+        dfs(arr, "", 0);
+        return result;
+    }
+
+    public void dfs(List<String> arr, String path, int index){
+        boolean isUnique = isUnique(path);
+        if(isUnique){
+            result = Math.max(result, path.length());
+        }
+        if(!isUnique || index > arr.size()){
+            return;
+        }
+        for(int i=index; i<arr.size(); i++){
+            dfs(arr, path + arr.get(i), i+1);
+        }
+    }
+    public boolean isUnique(String path){
+        Set<Character> set = new HashSet<>();
+        char[] chars = path.toCharArray();
+        for(char c: chars){
+            if(!set.contains(c)){
+                set.add(c);
+            }
+            else{
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+Time complexity : O(2^N)
+Space complexity: O(M)
