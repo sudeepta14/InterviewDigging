@@ -1,0 +1,36 @@
+class Solution {
+    Map<Character, List<Character>> map = new HashMap<>();
+    List<String> res = new ArrayList<>();
+    public List<String> letterCombinations(String digits) {
+        if(digits == null || digits.length() == 0) return res;
+
+        map.put('2', new ArrayList<Character>(Arrays.asList('a', 'b', 'c')));
+        map.put('3', new ArrayList<Character>(Arrays.asList('d', 'e', 'f')));
+        map.put('4', new ArrayList<Character>(Arrays.asList('g', 'h', 'i')));
+        map.put('5', new ArrayList<Character>(Arrays.asList('j', 'k', 'l')));
+        map.put('6', new ArrayList<Character>(Arrays.asList('m', 'n', 'o')));
+        map.put('7', new ArrayList<Character>(Arrays.asList('p', 'q', 'r', 's')));
+        map.put('8', new ArrayList<Character>(Arrays.asList('t', 'u', 'v')));
+        map.put('9', new ArrayList<Character>(Arrays.asList('w', 'x', 'y', 'z')));
+
+        helper(digits, 0, new StringBuilder());
+        
+        return res;
+    }
+
+    public void helper(String digits, int index, StringBuilder sb){
+        if(index == digits.length()){
+            res.add(sb.toString());
+            return;
+        }
+
+        for(char c: map.get(digits.charAt(index))){
+            sb.append(c);
+            helper(digits, index+1, sb);
+            sb.deleteCharAt(sb.length()-1);
+        }
+    }
+}
+
+Time complexity : O(4^N*N)
+Space complexity: O(N)
