@@ -25,5 +25,5 @@ class Solution {
     }
 }
 
-TC O(nlogn)
+TC O(n2) two sum is O(N) and we call it n times
 SC (n)
