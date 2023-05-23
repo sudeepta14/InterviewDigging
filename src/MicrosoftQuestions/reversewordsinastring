@@ -1,0 +1,25 @@
+class Solution {
+    public String reverseWords(String s) {
+        if(s.length() == 0 || s== null) return "";
+        int count = 0;
+        String[] strs = s.split(" ");
+        for(String str: strs){
+            if(str.length() > 0){
+                strs[count++] = str;
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        for(int i=count-1; i>0; i--){
+            sb.append(strs[i]);
+            sb.append(" ");
+        }
+        if(count > 0){
+            sb.append(strs[0]);
+        }
+        return sb.toString();
+    }
+}
+
+
+
+O(N)
