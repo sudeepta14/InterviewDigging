@@ -1,0 +1,78 @@
+class LRUCache {
+
+    Node head = new Node(0, 0);
+    Node tail = new Node(0, 0);
+    int capacity;
+    Map<Integer, Node> map;
+
+    public LRUCache(int capacity) {
+        this.capacity = capacity;
+        map = new HashMap<>();
+        head.next = tail;
+        tail.next = head;
+    }
+    
+    public int get(int key) {
+        int res = -1;
+        if(map.containsKey(key)){
+            Node n = map.get(key);
+            res = n.value;
+            remove(n);
+            insertToHead(n);
+        }
+        return res;
+    }
+    
+    public void put(int key, int value) {
+        if(map.containsKey(key)){
+            Node n = map.get(key);
+            n.value = value;
+            remove(n);
+            insertToHead(n);
+        }
+        else{
+            if(map.size() == capacity){
+                map.remove(tail.prev.key);
+                remove(tail.prev);
+            }
+            Node newNode = new Node(key, value);
+            map.put(key, newNode);
+            insertToHead(newNode);
+        }
+    }
+
+    class Node{
+    int key;
+    int value;
+    Node next;
+    Node prev;
+
+    Node(int key, int value){
+        this.key = key;
+        this.value = value;
+    }
+    }
+
+    public void remove(Node n){
+        n.next.prev = n.prev;
+        n.prev.next = n.next;
+    }
+
+    public void insertToHead(Node n){
+        Node next = head.next;
+        head.next = n;
+        n.prev = head;
+        n.next = next;
+        next.prev = n;
+    }
+}
+
+Time complexity : O(1) for both put and get
+Space complexity: O(N) due to hashmap and double linked list
+
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache obj = new LRUCache(capacity);
+ * int param_1 = obj.get(key);
+ * obj.put(key,value);
+ */
